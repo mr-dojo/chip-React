@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>All About Chip</title>
+  </head>
+
+  <body>
+    <div id="app-container"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      function App(props) {
+        console.log(props);
+        return <div className="app">{props.children}</div>;
+      };
+      ReactDOM.render(
+        <App className="app-resume">
+          <header>
+              <h1 className="header">Chip Skylark III</h1>
+		          <p>I am an <i>absolutly beautiful</i> Singer/Songwriter/Cashier<br></br>
+              and I have <strong>extremely</strong> shiney teeth.</p>
+          </header>
+          <main>
+            <section className="section">
+                <h2 className="header">Education</h2>
+                <p>Graduated from <a href="https://fairlyoddparents.fandom.com/wiki/Dimmsdale_University">Dimmsdale University</a> (2014)
+                with an associate's degree in dental hygiene.
+                </p>
+            </section>
+            <section className="section">
+              <h2 className="header">Skills</h2>
+              <ul>
+                <li>Singing</li>
+                <li>Dancing</li>
+                <li>Songwriting</li>
+                <li>Brushing</li>
+                <li>Flosing</li>
+                <li>Smiling</li>
+              </ul>
+            </section>
+            <section className="section">
+              <h2 className="header">Employment</h2>
+              <ol>
+                <li><h3>Actor for Nickelodeon Animation Studio<i>(2001-2011)</i></h3>
+                  <p>
+                    When I'm feeling lonely<br></br>
+                    As sad as I can be<br></br>
+                    All by myself on an uncharted island<br></br>
+                    In the endless sea<br></br>
+                    What makes me happy<br></br>
+                    Fills me up with glee<br></br>
+                    Those bones in my jaw<br></br>
+                    That don't have a flaw<br></br>
+                    My shiny teeth and me<br></br>
+                  </p>
+                </li>
+                <li>
+                  <h3>Cashier at 7-Eleven<i>(2016-Present)</i></h3>
+                  <p>
+                    My shiny teeth that twinkle<br></br>
+                    Just like the stars in space<br></br>
+                    My shiny teeth that sparkle<br></br>
+                    Add beauty to my face<br></br>
+                    My shiny teeth that glisten<br></br>
+                    Just like a Christmas tree<br></br>
+                    You know you'll walk a mile just to see me smile<br></br>
+                    My Shiny Teeth and Me<br></br>
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </main>
+          <footer>
+            <div id="contact">
+              <img alt="Chip Skylark pointing and smiling" width="200" src="https://vignette.wikia.nocookie.net/fairlyoddparents/images/6/6f/Chip.png/revision/latest/scale-to-width-down/441?cb=20130127203453&path-prefix=en"></img>
+              <h2 className="header">Contact Info</h2>
+            </div>
+            <address>
+              <p>Chip Skylark III<br></br>
+              Email:<a href="mailto:chipsmile@gmail.com" target="_blank">chipsmile@gmail.com</a><br></br>
+              Phone:1-(800)-123-4567</p>
+            </address>
+          </footer>
+        </App>,
+        document.querySelector('#app-container')
+      );
+    </script>
+  </body>
+</html>

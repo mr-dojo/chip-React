@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.app {
+  max-width: 500px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+}
+
+div#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+ol ul {
+  list-style: none;
+  padding: 0px;
+  margin: 15px;
+  text-align: center;
+}
+
+ul {
+  margin: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px 20px 0px 20px;
+}
+
+p {
+  margin: 20px;
+}
